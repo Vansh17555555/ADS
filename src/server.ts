@@ -235,7 +235,7 @@ app.post('/deploy', async (req: Request, res: Response): Promise<void> => {
         res.json({ 
             success: true,
             deploymentId,
-            url: `http://localhost:${deploymentPort}`,
+            url: `http://localhost:${deploymentPort}+1`,
             customDomain: customDomain ? `http://${customDomain}.localhost:3000` : undefined
         });
 
